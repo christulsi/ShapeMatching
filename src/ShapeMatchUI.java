@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package shapematch;
 
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -11,10 +6,6 @@ import java.util.ArrayList;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author novus
- */
 public class ShapeMatchUI extends JFrame{
     
     private ArrayList<ShapeTile> shapeTiles;

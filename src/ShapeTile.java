@@ -1,15 +1,6 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package shapematch;
 
 import javax.swing.JButton;
 
-/**
- *
- * @author novus
- */
 //An abstract class is a class that is declared abstract—it may or may not 
 //include abstract methods. Abstract classes cannot be instantiated, but they can be subclassed.
 //This class is meant to be generic and not meant to be instantiated..
