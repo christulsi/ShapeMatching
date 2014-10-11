@@ -1,10 +1,19 @@
+package shaping.v;
 
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JToolBar;
+
+import shapeMatching.m.CircleShapeTile;
+import shapeMatching.m.ShapeTile;
+import shapeMatching.m.SquareShapeTile;
+import shapeMatching.m.TriangleShapeTile;
 
 public class ShapeMatchUI extends JFrame{
     
@@ -53,5 +62,14 @@ public class ShapeMatchUI extends JFrame{
         setSize(500,400);
         setVisible(true);
         
+        JToolBar toolBar =new JToolBar();
+        JButton button = null;
+        
+        //button = makeNavigationButton("Back24","Start Game","Back to previous something-or-other","Previous");
+        //toolBar.add(button);
+        
     }
+    
+    
+    
 }
