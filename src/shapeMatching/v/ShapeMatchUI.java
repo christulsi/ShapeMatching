@@ -7,6 +7,9 @@ import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JToolBar;
 
@@ -24,6 +27,7 @@ public class ShapeMatchUI extends JFrame{
         //we are using a new layout policy that allows components to be laid out in
         //a grid fashion..hence the name
         setLayout(new GridLayout(0,3));
+        setJMenuBar(new MenuBar());  //Created and added Menu Bar to JFrame
         
         shapeTiles = new ArrayList<>();
         shapeTiles.add(new CircleShapeTile("blue", 25));
@@ -61,15 +65,7 @@ public class ShapeMatchUI extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500,400);
         setVisible(true);
-        
-        JToolBar toolBar =new JToolBar();
-        JButton button = null;
-        
-        //button = makeNavigationButton("Back24","Start Game","Back to previous something-or-other","Previous");
-        //toolBar.add(button);
-        
+                
     }
-    
-    
     
 }
