@@ -1,4 +1,4 @@
-package shaping.v;
+package shapeMatching.v;
 
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

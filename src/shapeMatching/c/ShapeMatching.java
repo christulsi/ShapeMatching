@@ -1,5 +1,6 @@
 package shapeMatching.c;
-import shaping.v.ShapeMatchUI;
+
+import shapeMatching.v.ShapeMatchUI;
 
 
 public class ShapeMatching {
