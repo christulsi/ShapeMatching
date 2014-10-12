@@ -1,4 +1,7 @@
-package shapeMatching.m;
+package shapeMatching.v;
+
+import java.awt.Color;
+import java.awt.Graphics;
 
 
 public class TriangleShapeTile extends ShapeTile {
@@ -7,7 +10,7 @@ public class TriangleShapeTile extends ShapeTile {
     private int sideB;
     private int sideC;
     
-    public TriangleShapeTile(String colour, int sideA, int sideB, int sideC) {
+    public TriangleShapeTile(Color colour, int sideA, int sideB, int sideC) {
         //the "super" call here passes values direclty to the parent class's constructor
         //it is similar to calling new ShapeTile(colour, 3)..
         super(colour, 3);
@@ -27,4 +30,10 @@ public class TriangleShapeTile extends ShapeTile {
         description += "\n I am also a triangle with sides measuring: "+sideA+", "+sideB+", "+sideC;
         return description;
     }
+    /*
+    public void paintComponent(Graphics g){
+  		super.paintComponent(g);
+  		g.setColor(getColour());
+  	}
+  	*/
 }

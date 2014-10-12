@@ -10,52 +10,51 @@ import javax.swing.JMenuItem;
 public class MenuBar extends JMenuBar{
 	
 	public MenuBar(){
-	    		    	
-	    	//Created File Menu
-	    	JMenu fileMenu = new JMenu("File");
+	        
+		super();
+	    //Created File Menu
+	    JMenu fileMenu = new JMenu("File");
 	    	
-	    	//Created Menu Items
-	    	JMenuItem startgame = new JMenuItem("NewGame");
-	    	JMenuItem stats = new JMenuItem("Statistics");
-	    	JMenuItem exit = new JMenuItem("Exit");
+	    //Created Menu Items
+	    JMenuItem startgame = new JMenuItem("NewGame");
+	    JMenuItem stats = new JMenuItem("Statistics");
+	    JMenuItem exit = new JMenuItem("Exit");
 	    	
-	    	//added menu items to File menu
-	    	fileMenu.add(startgame);
-	    	fileMenu.add(stats);
-	    	fileMenu.addSeparator();
-	    	fileMenu.add(exit);
+	    //added menu items to File menu
+	    fileMenu.add(startgame);
+	    fileMenu.add(stats);
+	    fileMenu.addSeparator();
+	    fileMenu.add(exit);
 	    	
-	    	//add the file menu to the menuBar
-	    	add(fileMenu);
+	    //add the file menu to the menuBar
+	    add(fileMenu);
 	    	
-	    	startgame.addActionListener(new ActionListener(){
+	    startgame.addActionListener(new ActionListener(){
 	
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					// TODO Auto-generated method stub
+			@Override
+			public void actionPerformed(ActionEvent e) {
 					
-				}
-	    	});
+			}
+	    });
 	    	
-	    	stats.addActionListener(new ActionListener(){
+	    stats.addActionListener(new ActionListener(){
 	
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					// TODO Auto-generated method stub
-					
-				}
-	    	});
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+			}
+	    });
 	    	
-	    	exit.addActionListener(new ActionListener(){
+	    exit.addActionListener(new ActionListener(){
 	
-				@Override
-				public void actionPerformed(ActionEvent e) {
+			@Override
+			public void actionPerformed(ActionEvent e) {
 					
-					System.exit(1);
-				}
+				System.exit(0);
+			}
 	    		
-	    	});
+	    });
 	    	
-	    }
+	}
 
 }

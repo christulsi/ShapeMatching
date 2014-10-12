@@ -1,4 +1,6 @@
-package shapeMatching.m;
+package shapeMatching.v;
+
+import java.awt.Color;
 
 import javax.swing.JButton;
 
@@ -7,10 +9,10 @@ import javax.swing.JButton;
 //This class is meant to be generic and not meant to be instantiated..
 public abstract class ShapeTile extends JButton {
     
-    private String colour;
+    private Color colour;
     private int sides;
     
-    public ShapeTile(String colour, int sides) {
+    public ShapeTile(Color colour, int sides) {
         this.colour = colour;
         this.sides = sides;
     }
@@ -20,7 +22,7 @@ public abstract class ShapeTile extends JButton {
     //an implementation (without braces, and followed by a semicolon), like this:
     public abstract double getPerimeter();
 
-    public String getColour() {
+    public Color getColour() {
         return colour;
     }
 
@@ -28,7 +30,7 @@ public abstract class ShapeTile extends JButton {
         return sides;
     }
 
-    public void setColour(String colour) {
+    public void setColour(Color colour) {
         this.colour = colour;
     }
 
@@ -40,5 +42,5 @@ public abstract class ShapeTile extends JButton {
         String description = "I have "+getSides()+" side(s), my colour is "+getColour()+" and my perimeter is "+getPerimeter();
         return description;
     }
-    
+ 
 }

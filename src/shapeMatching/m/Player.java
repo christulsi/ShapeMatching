@@ -3,8 +3,8 @@ package shapeMatching.m;
 public class Player{
     
 	private String name;
-	private int wins;
-	private int lose;
+	private int wins = 0;
+	private int lose = 0;
 	
 	public Player(String name){
 		
