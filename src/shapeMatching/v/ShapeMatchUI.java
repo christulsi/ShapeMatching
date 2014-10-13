@@ -10,13 +10,12 @@ public class ShapeMatchUI extends JFrame{
     private ArrayList<ShapeTile> shapeTiles;
     
     public ShapeMatchUI() {
-        
+    	       
     	super("Shape Match");
         
     	//we are using a new layout policy that allows components to be laid out in
         //a grid fashion..hence the name
         setLayout(new GridLayout(0,3));
-        //new OptionPane();
         
         setJMenuBar(new MenuBar());  //Created and added Menu Bar to JFrame
         
@@ -28,5 +27,5 @@ public class ShapeMatchUI extends JFrame{
         
                 
     }    	
-
+    
 }
